@@ -22,27 +22,90 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="container header-list">
-        <nav class="navigation">
-          <a href="index.html" class="logo-header logo"
-            ><span class="logo-web">Web</span>Studio</a
-          >
-          <ul class="nav-list list">
-            <li class="nav-li"><a href="./index.html" class="nav-link active">Studio</a></li>
-            <li class="nav-li"><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
-            <li class="nav-li"><a href="" class="nav-link">Contacts</a></li>
+    <div class="container header-list">
+      <a href="index.html" class="logo-header logo">
+        <span class="logo-web">Web</span>Studio</a> 
+          <nav class="navigation"> 
+            <ul class="nav-list list">
+              <li class="nav-li"><a href="./index.html" class="nav-link active">Studio</a></li>
+              <li class="nav-li"><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
+              <li class="nav-li"><a href="" class="nav-link">Contacts</a></li>
+            </ul>
+          </nav>
+          <ul class="contact-list list">
+            <li class="contact-li">
+              <a href="mailto:info@devstudio.com" class="contact"
+                >info@devstudio.com</a>
+            </li>
+            <li class="contact-li contact-tel">
+              <a href="tel:+110001111111" class="contact ">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+
+      <!-- Mobile mmenu------------------>
+      <button type="button" class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+        <svg width="32px" height="22px" class="icon-open-menu">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu-container js-menu-container">
+        <button type="button" class="modal-btn menu-toggle js-close-menu"
+        width="8px" height="8px">
+          <svg>
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav class="navigation-mobile"> 
+          <ul class="nav-list  mobile-list list">
+            <li class="nav-li mobile-item"><a href="./index.html" class="nav-link">Studio</a></li>
+            <li class="nav-li mobile-item"><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
+            <li class="nav-li mobile-item"><a href="" class="nav-link">Contacts</a></li>
           </ul>
         </nav>
-        <ul class="contact-list list">
+        <ul class="mobile-contact list">
           <li class="contact-li">
-            <a href="mailto:info@devstudio.com" class="contact"
-              >info@devstudio.com</a>
-          </li>
-          <li class="contact-li">
-            <a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a>
+            <a href="tel:+110001111111" class="contact menu-tel">
+              +11 (000) 111-11-11</a>
+          </li>  <li class="contact-li">
+            <a href="mailto:info@devstudio.com" class="contact menu-email"
+            >info@devstudio.com</a>
           </li>
         </ul>
-      </div>
+        <ul class="mobile-social-list list">
+          <li class="social-item mobile-item">
+            <a href="/" class="social-link" aria-label="Instagram">
+              <svg class="social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item mobile-item">
+            <a href="/" class="social-link" aria-label="Twitter">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item mobile-item">
+            <a href="/" class="social-link" aria-label="Facebook">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item mobile-item">
+            <a href="/" class="social-link" aria-label="Linkedin">
+              <svg class="social-icon">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>       
+    </div>
     </header>
 
     <main>
@@ -114,8 +177,8 @@
       </div>
       </section>
 
-      <!-- WHAT ARE WR DOING -->
-      <section class="section">
+      <!-- WHAT ARE WE DOING -->
+      <section class="section what-we-doing">
         <div class="container">
           <h2 class="second-title">What are we doing</h2>
           <ul class="doing-list list">
@@ -380,7 +443,6 @@
     </main>
 
     <!-- FOOTHER -->
-
     <footer class="foother-page">
       <div class="container foother-flex">
         <div class="foother-item">
@@ -394,31 +456,31 @@
         </div>
         <div class="foother-item">
           <p class="social-title">Social media</p>
-          <ul class="social-fot-list list">
-            <li class="social-fot-item">
-                <a href="/" class="social-fot-link" aria-label="Instagram">
-                  <svg class="social-fot-icon">
+          <ul class="social-foot-list list">
+            <li class="social-foot-item">
+                <a href="/" class="social-foot-link" aria-label="Instagram">
+                  <svg class="social-foot-icon">
                      <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
             </li>
-            <li class="social-fot-item">
-              <a href="/" class="social-fot-link" aria-label="Twitter">
-                <svg class="social-fot-icon">
+            <li class="social-foot-item">
+              <a href="/" class="social-foot-link" aria-label="Twitter">
+                <svg class="social-foot-icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-fot-item">
-              <a href="/" class="social-fot-link" aria-label="Facebook">
-                <svg class="social-fot-icon">
+            <li class="social-foot-item">
+              <a href="/" class="social-foot-link" aria-label="Facebook">
+                <svg class="social-foot-icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-fot-item">
-              <a href="/" class="social-fot-link" aria-label="Linkedin">
-                <svg class="social-fot-icon">
+            <li class="social-foot-item">
+              <a href="/" class="social-foot-link" aria-label="Linkedin">
+                <svg class="social-foot-icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -426,14 +488,13 @@
           </ul>
         </div>
 
-      
           <form class="foot-form-email">  
             <div role="group">
-            <p class="foot-email-title">Subscribe</p> 
+              <p class="foot-email-title">Subscribe</p> 
 
-              <div class="foot-btn-wrapper">
-                <input type="email" name="user_email" 
+              <input type="email" name="user_email" 
                 class="foot-email-input" placeholder="E-mail"> 
+              <div class="foot-btn-wrapper">
                 <button type="submit" class="btn-foot-email">Subscribe</button>
                 <svg class="btn-icon-send">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -445,7 +506,6 @@
     </footer>
 
       <!-- MODAL -->
-
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="modal-btn" data-modal-close>
@@ -512,5 +572,6 @@
         
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
