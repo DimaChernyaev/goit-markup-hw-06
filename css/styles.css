@@ -23,7 +23,6 @@ body {
 /* CONTAINER */
 
 .container {
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -228,7 +227,6 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
   .menu-container {
     position: fixed;
     top: 0;
@@ -246,11 +244,12 @@ img {
     transform: translateX(0);
     transition: transform 250ms var(--ani-step);
   }
+
   
   .nav-list.mobile-list {
     font-weight: 700;
     font-size: 36px;
-    margin-bottom: 200px;
+    margin-bottom: 280px;
   }
 
   .nav-li.mobile-item:not(:last-child) {
@@ -293,7 +292,7 @@ img {
   .icon-open-menu {transition: color 250ms var(--ani-step);}
   .menu-toggle:hover > .icon-open-menu,
   .menu-toggle:focus > .icon-open-menu {
-   color: var(--button-color);
+    color: var(--button-color);
   } 
 }
 
@@ -304,24 +303,58 @@ img {
   }
 }
 
-
 /* -----------------------MAIN------------------------------ */
 
 /* HERO-----------------------------------*/
+
+  @media screen and (max-width: 480px) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), 
+    rgba(47, 48, 58, 0.7)),
+    url(../images/hero1x480px.jpg);
+      max-width: 480px;
+    }    
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .box {
+        background-image: url('../images/hero2x480px.jpg');
+        }
+    }
+
+
+  @media screen and (min-width: 481px) and (max-width:768px) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), 
+    rgba(47, 48, 58, 0.7)),
+    url(../images/hero1x768px.jpg);
+      max-width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .hero {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), 
+    rgba(47, 48, 58, 0.7)),
+    url(../images/hero1x1200px.jpg);
+      max-width: 1440px;
+    }
+  }
+
 .hero {
   background-color: var(--main-color);
   text-align: center;
   padding-top: 112px;
   padding-bottom: 112px;
   margin: 0 auto;    
-
   max-width: 1440px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.7), 
-  rgba(47, 48, 58, 0.7)),
-  url();
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;}
+
+
 
 .hero-title {
   color: var(--third-color);
@@ -928,6 +961,12 @@ img {
   }
 }
 
+@media screen and (max-width: 399px) {
+  .modal {
+    width: 315px;
+  }
+}
+
 .modal-btn {
   position: absolute;
   top: 24px;
@@ -1161,6 +1200,10 @@ appearance: none;
 
 .btn-list:not(:last-child) {
   margin-right: 24px;
+}
+
+@media screen and {
+  
 }
 
 .project-list {
